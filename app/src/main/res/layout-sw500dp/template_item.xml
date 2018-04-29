@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/template"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:src="@drawable/resume_1"/>
+</android.support.v7.widget.CardView>

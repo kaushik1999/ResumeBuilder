@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/skill"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:inputType="textCapSentences|textAutoComplete"
+        android:textColor="#ef1329"
+        android:textColorHint="#667279"
+        android:textSize="14sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_gravity="bottom"
+        android:hint="@string/skill_hint"/>
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

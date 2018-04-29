@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_saved_resumes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SavedResumesActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Saved Resumes"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:paddingBottom="40dp"
+                android:clipToPadding="false"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                tools:listitem="@layout/saved_resume_item"/>
+            <RelativeLayout
+                android:id="@+id/add_some_items"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:srcCompat="@drawable/plus_grey"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add"
+                    android:textColor="#bdbdbd"
+                    android:gravity="center"
+                    android:text="No saved resumes"
+                    android:textSize="24sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/plus_white"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_gravity="bottom|end"/>
+</android.support.design.widget.CoordinatorLayout>
